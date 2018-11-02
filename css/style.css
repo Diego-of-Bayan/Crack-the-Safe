@@ -1,32 +1,76 @@
-h1 { 
+#title {
+    font-size:40px;
     text-align: center;
+    font-family: "Luckiest Guy", "Cursive"; 
+    animation-name: title;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+    position: relative;
+    left: -580px;
 }
-
-.inputBoxes {
+@keyframes title {
+    80% {transform: translate(600px, 0px);}
+    100% {transform: translate(580px,0px);}
+}
+#intro {
+    font-size: 25px;
+    position: absolute;
+    top: 40%;
+    left: -30%;
+    animation-name: intro;
+    animation-duration: 2s;
+}
+#parentInput {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
 }
-
-input
-{
-    font-size:24px;
-    height:50px;
-    width:50px;
-    text-align:center;
-}
-
-.buttons
-{
+#buttonParent {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    
 }
-
-.row{
-  text-align:center;
-  
+.input {
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
 }
-#choices{
-  display:flex;
-  justify-content:space-between;
-  
+#buttonMessage {
+    opacity: 0;
+}
+#verify {
+    width: 100px;
+    height: 50px;
+    font-size: 15px;
+    font-family: "Luckiest Guy", "cursive";
+    border: 3px outset blue;
+    background-color: blue;
+    box-shadow: 5px 10px 5px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#reveal {
+    width: 100px;
+    height: 100px;
+    font-size: 15px;
+    border: 3px outset red;
+    border-radius: 50%;
+    background-color: red;
+    box-shadow: 5px 10px 5px;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#verify:active, #reveal:active {
+    animation-name: buttonAnimation;
+    animation-duration: 1s;
+}
+@keyframes buttonAnimation {
+    10% {transform: scale(0.9);}
+}
+#answerReveal {
+    text-align: center;
+    color: red;
+    font-size: 100px;
 }

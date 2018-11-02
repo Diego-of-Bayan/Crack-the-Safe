@@ -1,50 +1,33 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>Crack the Safe Game</title>
-  <!-- Link CSS here -->
-  <link type='text/css' rel='stylesheet' href='css/style.css' />
-</head>
-
-<body>
-   
-    
-  <!-- TASK 1: In the div below. 
-        1. In a header tag, add a title.
-        2. In a paragraph tag, add instructions on how to play the game.
-        3. Add an image.
-        4. Add 4 input boxes and button .
-        5. Add divs to record user choice. 
-        6. Add a div to record correct number counts and winner
-     -->
-  <div class="row">
-      <h1>Crack the safe</h1>
-      <img src="https://us.123rf.com/450wm/coliap/coliap1110/coliap111001224/10888364-open-safe-with-gold-inside-isolated-on-white.jpg?ver=6">
-
-      <h3>Please Submit Your Choice Below</h3>
-      <div class="inputBoxes">
-        <input id="number1">
-        <input id="number2">
-        <input id="number3">
-        <input id="number4">
-      </div>
-      <div class="buttons">
-            <button id="verify">Verify!</button>
-      </div>
-      <div>
-        <h4>User Choice</h4>
-        <p id="userChoice"></p>
-        <h4>Results</h4>
-        <div id="results"></div>
-      </div>
-      
-  </div>
-
-  <!-- Link JQuery here -->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <!-- Link script.js here -->
-  <script src='js/script.js'></script>
-</body>
-
+    <head>
+        <title>Crack the Safe</title>
+        <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+    </head>
+    <body>
+        <h1 id="intro">Anonymoose</h1>
+        <h1 id="title">Mastermind :D</h1>
+        <div id="parentInput">
+            <div id="inputparent1">
+                <input class="input" id="input1">
+            </div>
+            <div id="inputparent2">
+                <input class="input" id="input2">
+            </div>
+            <div id="inputparent3">
+                <input class="input" id="input3">
+            </div>
+            <div id="inputparent4">
+                <input class="input" id="input4">
+            </div>
+        </div>
+        <br> 
+        <br>
+        <div id="buttonParent">
+            <button id="verify">klik meh!</button>
+            <button id="reveal">Emergency Reveal</button>
+        </div>
+        <h3 id="buttonMessage">ooh a hidden button :D</h3>
+        <h1 id="answerReveal"></h1>
+    </body>
 </html>
